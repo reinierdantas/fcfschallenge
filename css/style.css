@@ -1,0 +1,89 @@
+/* Reser */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    height: 100%;
+    font-size: 15px;
+    background: hsl(0, 0%, 98%);
+}
+.container{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+/* Intro */
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+}
+#intro h1{
+    font-weight:600;
+    color: hsl(234, 12%, 34%);
+}
+#intro h1:first-child{
+    font-weight:200;
+    color: hsl(234, 12%, 34%);
+}
+#intro p{
+    padding: 20px;
+    font-weight: 200;
+}
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+/* Cards */
+.cardItem{
+    flex: 1 1 400px;
+    max-width: 400px;
+    height: 250px;
+    max-height: 100%;
+    clear: both;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+}
+.cardItem h3, .cardItem p{
+    text-align: left;
+}
+.cardItem img{
+    float: right;
+    padding: 40px 0;
+}
+.card1{
+    border-top: 5px solid hsl(180,62%,55%);
+    margin-top: 150px;
+}
+.card2{
+    border-top: 5px solid hsl(0,78%,62%);
+    margin: 0;
+}
+.card3{
+    border-top: 5px solid hsl(212,86%,64%);
+    margin-top: 150px;
+}
+.card4{
+    max-width: 400px;
+    border-top: 5px solid hsl(34,97%,64%);
+    margin-top: -130px;
+}
+/* Footer */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Media - only to rearrange the cards*/
+@media(max-width:915px){
+    .cardItem{
+        margin-top: 20px;
+    }
+}
